@@ -1,0 +1,87 @@
+BFS
+A
+D
+4 
+A B 5
+A C 3
+B D 1
+C D 2
+4
+A 4
+B 1
+C 1
+D 0
+
+Expected Output:
+A 0
+B 5
+D 6
+*************************************
+
+UCS
+A
+E
+5
+A B 80
+A D 90
+B C 10 
+D E 20
+C E 20
+5
+A 50
+B 40
+C 30
+D 20
+E 0
+
+Expected Output:
+A 0
+D 90
+E 110
+*************************************
+
+DFS
+A
+E
+6
+A C 1
+A B 1
+B C 1
+B D 1
+C E 1
+D E 1
+5
+A 2
+B 1
+C 1
+D 1
+E 0
+
+Expected Output:
+A 0
+B 1
+D 2
+E 3
+*************************************
+
+A*
+A
+D
+4
+A B 3
+A C 3
+B D 2
+C D 1
+4
+A 4
+B 2
+C 1
+D 0
+
+Expected Output:
+A 0
+C 3
+D 4
+
+
+
