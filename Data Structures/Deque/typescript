@@ -1,0 +1,1197 @@
+Script started on 2017-11-13 11:49:23-0800
+]0;005977045@jb358-0:~/cse330/lab7[005977045@jb358-0 lab7]$ g++ -c Deque_test.cpp
+In file included from Deque_test.cpp:6:0:
+Deque.h:80:10: error: expected nested-name-specifier before ‘iterator’
+ typename iterator Deque<T>::begin()
+          ^~~~~~~~
+Deque.h:80:19: error: expected initializer before ‘Deque’
+ typename iterator Deque<T>::begin()
+                   ^~~~~
+Deque.h:87:1: error: invalid use of template-name ‘DequeIterator’ without an argument list
+ DequeIterator::iterator Deque::end()
+ ^~~~~~~~~~~~~
+Deque.h:87:1: note: class template argument deduction is only available with -std=c++1z or -std=gnu++1z
+Deque.h:10:26: note: ‘template<class T> class DequeIterator’ declared here
+ template <class T> class DequeIterator;
+                          ^~~~~~~~~~~~~
+Deque.h: In member function ‘void Deque<T>::erase(const iterator&, const iterator&)’:
+Deque.h:105:45: error: expected ‘;’ before ‘)’ token
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+                                             ^
+Deque.h: At global scope:
+Deque.h:134:6: error: ‘template<class T> class Deque’ used without template parameters
+ void Deque::push_back(const T & value)
+      ^~~~~
+Deque.h: In function ‘void push_back(const T&)’:
+Deque.h:136:5: error: ‘vecTwo’ was not declared in this scope
+     vecTwo.push_back(value);
+     ^~~~~~
+Deque.h: At global scope:
+Deque.h:179:5: error: ‘template<class T> class DequeIterator’ used without template parameters
+ T & DequeIterator::operator*()
+     ^~~~~~~~~~~~~
+Deque.h:179:30: error: ‘T& operator*()’ must have an argument of class or enumerated type
+ T & DequeIterator::operator*()
+                              ^
+Deque.h:185:1: error: invalid use of template-name ‘std::iterator’ without an argument list
+ iterator & DequeIterator::operator++()
+ ^~~~~~~~
+Deque.h:185:1: note: class template argument deduction is only available with -std=c++1z or -std=gnu++1z
+In file included from /usr/include/c++/7/bits/stl_algobase.h:65:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator_base_types.h:118:12: note: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ declared here
+     struct iterator
+            ^~~~~~~~
+In file included from Deque_test.cpp:6:0:
+Deque.h:192:1: error: invalid use of template-name ‘std::iterator’ without an argument list
+ iterator DequeIterator::operator++(int)
+ ^~~~~~~~
+Deque.h:192:1: note: class template argument deduction is only available with -std=c++1z or -std=gnu++1z
+In file included from /usr/include/c++/7/bits/stl_algobase.h:65:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator_base_types.h:118:12: note: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ declared here
+     struct iterator
+            ^~~~~~~~
+In file included from Deque_test.cpp:6:0:
+Deque.h:200:1: error: invalid use of template-name ‘std::iterator’ without an argument list
+ iterator & DequeIterator::operator--()
+ ^~~~~~~~
+Deque.h:200:1: note: class template argument deduction is only available with -std=c++1z or -std=gnu++1z
+In file included from /usr/include/c++/7/bits/stl_algobase.h:65:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator_base_types.h:118:12: note: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ declared here
+     struct iterator
+            ^~~~~~~~
+In file included from Deque_test.cpp:6:0:
+Deque.h:207:1: error: invalid use of template-name ‘std::iterator’ without an argument list
+ iterator DequeIterator::operator--(int)
+ ^~~~~~~~
+Deque.h:207:1: note: class template argument deduction is only available with -std=c++1z or -std=gnu++1z
+In file included from /usr/include/c++/7/bits/stl_algobase.h:65:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator_base_types.h:118:12: note: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ declared here
+     struct iterator
+            ^~~~~~~~
+In file included from Deque_test.cpp:6:0:
+Deque.h:215:6: error: ‘template<class T> class DequeIterator’ used without template parameters
+ bool DequeIterator::operator==(const iterator & r)
+      ^~~~~~~~~~~~~
+Deque.h:215:38: error: invalid use of template-name ‘std::iterator’ without an argument list
+ bool DequeIterator::operator==(const iterator & r)
+                                      ^~~~~~~~
+Deque.h:215:38: note: class template argument deduction is only available with -std=c++1z or -std=gnu++1z
+In file included from /usr/include/c++/7/bits/stl_algobase.h:65:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator_base_types.h:118:12: note: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ declared here
+     struct iterator
+            ^~~~~~~~
+In file included from Deque_test.cpp:6:0:
+Deque.h:215:50: error: ‘bool operator==(const int&)’ must have an argument of class or enumerated type
+ bool DequeIterator::operator==(const iterator & r)
+                                                  ^
+Deque.h:221:6: error: ‘template<class T> class DequeIterator’ used without template parameters
+ bool DequeIterator::operator!=(const iterator & r)
+      ^~~~~~~~~~~~~
+Deque.h:221:38: error: invalid use of template-name ‘std::iterator’ without an argument list
+ bool DequeIterator::operator!=(const iterator & r)
+                                      ^~~~~~~~
+Deque.h:221:38: note: class template argument deduction is only available with -std=c++1z or -std=gnu++1z
+In file included from /usr/include/c++/7/bits/stl_algobase.h:65:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator_base_types.h:118:12: note: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ declared here
+     struct iterator
+            ^~~~~~~~
+In file included from Deque_test.cpp:6:0:
+Deque.h:221:50: error: ‘bool operator!=(const int&)’ must have an argument of class or enumerated type
+ bool DequeIterator::operator!=(const iterator & r)
+                                                  ^
+Deque.h:227:6: error: ‘template<class T> class DequeIterator’ used without template parameters
+ bool DequeIterator::operator<(const iterator & r)
+      ^~~~~~~~~~~~~
+Deque.h:227:37: error: invalid use of template-name ‘std::iterator’ without an argument list
+ bool DequeIterator::operator<(const iterator & r)
+                                     ^~~~~~~~
+Deque.h:227:37: note: class template argument deduction is only available with -std=c++1z or -std=gnu++1z
+In file included from /usr/include/c++/7/bits/stl_algobase.h:65:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator_base_types.h:118:12: note: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ declared here
+     struct iterator
+            ^~~~~~~~
+In file included from Deque_test.cpp:6:0:
+Deque.h:227:49: error: ‘bool operator<(const int&)’ must have an argument of class or enumerated type
+ bool DequeIterator::operator<(const iterator & r)
+                                                 ^
+Deque.h:233:5: error: ‘template<class T> class DequeIterator’ used without template parameters
+ T & DequeIterator::operator[](unsigned int i)
+     ^~~~~~~~~~~~~
+Deque.h:233:45: error: ‘T& operator[](unsigned int)’ must be a nonstatic member function
+ T & DequeIterator::operator[](unsigned int i)
+                                             ^
+Deque.h:239:1: error: invalid use of template-name ‘std::iterator’ without an argument list
+ iterator DequeIterator::operator=(const iterator & r)
+ ^~~~~~~~
+Deque.h:239:1: note: class template argument deduction is only available with -std=c++1z or -std=gnu++1z
+In file included from /usr/include/c++/7/bits/stl_algobase.h:65:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator_base_types.h:118:12: note: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ declared here
+     struct iterator
+            ^~~~~~~~
+In file included from Deque_test.cpp:6:0:
+Deque.h:248:1: error: invalid use of template-name ‘std::iterator’ without an argument list
+ iterator DequeIterator::operator+(int i)
+ ^~~~~~~~
+Deque.h:248:1: note: class template argument deduction is only available with -std=c++1z or -std=gnu++1z
+In file included from /usr/include/c++/7/bits/stl_algobase.h:65:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator_base_types.h:118:12: note: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ declared here
+     struct iterator
+            ^~~~~~~~
+In file included from Deque_test.cpp:6:0:
+Deque.h:254:1: error: invalid use of template-name ‘std::iterator’ without an argument list
+ iterator DequeIterator::operator-(int i)
+ ^~~~~~~~
+Deque.h:254:1: note: class template argument deduction is only available with -std=c++1z or -std=gnu++1z
+In file included from /usr/include/c++/7/bits/stl_algobase.h:65:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator_base_types.h:118:12: note: ‘template<class _Category, class _Tp, class _Distance, class _Pointer, class _Reference> struct std::iterator’ declared here
+     struct iterator
+            ^~~~~~~~
+In file included from Deque_test.cpp:6:0:
+Deque.h: In instantiation of ‘void Deque<T>::erase(const iterator&) [with T = int; Deque<T>::iterator = DequeIterator<int>]’:
+Deque_test.cpp:51:21:   required from here
+Deque.h:97:11: error: no match for ‘operator<’ (operand types are ‘const iterator {aka const DequeIterator<int>}’ and ‘const iterator {aka const DequeIterator<int>}’)
+     if (i < i) vecOne.erase(((n-1) - index) + vecOne.begin());
+         ~~^~~
+Deque.h:168:7: note: candidate: bool DequeIterator<T>::operator<(const iterator&) [with T = int; DequeIterator<T>::iterator = DequeIterator<int>] <near match>
+  bool operator<(const iterator & r);
+       ^~~~~~~~
+Deque.h:168:7: note:   passing ‘const iterator* {aka const DequeIterator<int>*}’ as ‘this’ argument discards qualifiers
+In file included from /usr/include/c++/7/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_pair.h:449:5: note: candidate: template<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_pair.h:449:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:97:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::pair<_T1, _T2>’
+     if (i < i) vecOne.erase(((n-1) - index) + vecOne.begin());
+         ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:305:5: note: candidate: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:305:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:97:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+     if (i < i) vecOne.erase(((n-1) - index) + vecOne.begin());
+         ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:343:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:343:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:97:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+     if (i < i) vecOne.erase(((n-1) - index) + vecOne.begin());
+         ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:1142:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     operator<(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1142:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:97:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::move_iterator<_IteratorL>’
+     if (i < i) vecOne.erase(((n-1) - index) + vecOne.begin());
+         ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:1148:5: note: candidate: template<class _Iterator> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     operator<(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1148:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:97:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::move_iterator<_IteratorL>’
+     if (i < i) vecOne.erase(((n-1) - index) + vecOne.begin());
+         ~~^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/basic_string.h:6080:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6080:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:97:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+     if (i < i) vecOne.erase(((n-1) - index) + vecOne.begin());
+         ~~^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/basic_string.h:6093:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6093:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:97:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+     if (i < i) vecOne.erase(((n-1) - index) + vecOne.begin());
+         ~~^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/basic_string.h:6105:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6105:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:97:11: note:   mismatched types ‘const _CharT*’ and ‘DequeIterator<int>’
+     if (i < i) vecOne.erase(((n-1) - index) + vecOne.begin());
+         ~~^~~
+In file included from /usr/include/c++/7/bits/ios_base.h:46:0,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/system_error:208:3: note: candidate: bool std::operator<(const std::error_code&, const std::error_code&)
+   operator<(const error_code& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/7/system_error:208:3: note:   no known conversion for argument 1 from ‘const iterator {aka const DequeIterator<int>}’ to ‘const std::error_code&’
+/usr/include/c++/7/system_error:282:3: note: candidate: bool std::operator<(const std::error_condition&, const std::error_condition&)
+   operator<(const error_condition& __lhs,
+   ^~~~~~~~
+/usr/include/c++/7/system_error:282:3: note:   no known conversion for argument 1 from ‘const iterator {aka const DequeIterator<int>}’ to ‘const std::error_condition&’
+In file included from /usr/include/c++/7/vector:64:0,
+                 from Deque.h:6,
+                 from Deque_test.cpp:6:
+/usr/include/c++/7/bits/stl_vector.h:1613:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_vector.h:1613:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:97:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+     if (i < i) vecOne.erase(((n-1) - index) + vecOne.begin());
+         ~~^~~
+Deque.h: In instantiation of ‘void Deque<T>::erase(const iterator&, const iterator&) [with T = int; Deque<T>::iterator = DequeIterator<int>]’:
+Deque_test.cpp:52:32:   required from here
+Deque.h:105:11: error: no match for ‘operator<’ (operand types are ‘const iterator {aka const DequeIterator<int>}’ and ‘int’)
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+         ~~^~~
+Deque.h:168:7: note: candidate: bool DequeIterator<T>::operator<(const iterator&) [with T = int; DequeIterator<T>::iterator = DequeIterator<int>]
+  bool operator<(const iterator & r);
+       ^~~~~~~~
+Deque.h:168:7: note:   no known conversion for argument 1 from ‘int’ to ‘const iterator& {aka const DequeIterator<int>&}’
+In file included from /usr/include/c++/7/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_pair.h:449:5: note: candidate: template<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_pair.h:449:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:105:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::pair<_T1, _T2>’
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+         ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:305:5: note: candidate: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:305:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:105:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+         ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:343:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:343:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:105:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+         ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:1142:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     operator<(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1142:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:105:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::move_iterator<_IteratorL>’
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+         ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:1148:5: note: candidate: template<class _Iterator> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     operator<(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1148:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:105:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::move_iterator<_IteratorL>’
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+         ~~^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/basic_string.h:6080:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6080:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:105:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+         ~~^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/basic_string.h:6093:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6093:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:105:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+         ~~^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/basic_string.h:6105:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6105:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:105:11: note:   mismatched types ‘const _CharT*’ and ‘DequeIterator<int>’
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+         ~~^~~
+In file included from /usr/include/c++/7/bits/ios_base.h:46:0,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/system_error:208:3: note: candidate: bool std::operator<(const std::error_code&, const std::error_code&)
+   operator<(const error_code& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/7/system_error:208:3: note:   no known conversion for argument 1 from ‘const iterator {aka const DequeIterator<int>}’ to ‘const std::error_code&’
+/usr/include/c++/7/system_error:282:3: note: candidate: bool std::operator<(const std::error_condition&, const std::error_condition&)
+   operator<(const error_condition& __lhs,
+   ^~~~~~~~
+/usr/include/c++/7/system_error:282:3: note:   no known conversion for argument 1 from ‘const iterator {aka const DequeIterator<int>}’ to ‘const std::error_condition&’
+In file included from /usr/include/c++/7/vector:64:0,
+                 from Deque.h:6,
+                 from Deque_test.cpp:6:
+/usr/include/c++/7/bits/stl_vector.h:1613:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_vector.h:1613:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:105:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+         ~~^~~
+Deque.h:105:20: error: no match for ‘operator<’ (operand types are ‘const iterator {aka const DequeIterator<int>}’ and ‘int’)
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+                  ~~^~~
+Deque.h:168:7: note: candidate: bool DequeIterator<T>::operator<(const iterator&) [with T = int; DequeIterator<T>::iterator = DequeIterator<int>]
+  bool operator<(const iterator & r);
+       ^~~~~~~~
+Deque.h:168:7: note:   no known conversion for argument 1 from ‘int’ to ‘const iterator& {aka const DequeIterator<int>&}’
+In file included from /usr/include/c++/7/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_pair.h:449:5: note: candidate: template<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_pair.h:449:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:105:20: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::pair<_T1, _T2>’
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+                  ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:305:5: note: candidate: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:305:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:105:20: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+                  ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:343:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:343:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:105:20: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+                  ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:1142:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     operator<(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1142:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:105:20: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::move_iterator<_IteratorL>’
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+                  ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:1148:5: note: candidate: template<class _Iterator> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     operator<(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1148:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:105:20: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::move_iterator<_IteratorL>’
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+                  ~~^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/basic_string.h:6080:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6080:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:105:20: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+                  ~~^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/basic_string.h:6093:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6093:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:105:20: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+                  ~~^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/basic_string.h:6105:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6105:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:105:20: note:   mismatched types ‘const _CharT*’ and ‘DequeIterator<int>’
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+                  ~~^~~
+In file included from /usr/include/c++/7/bits/ios_base.h:46:0,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/system_error:208:3: note: candidate: bool std::operator<(const std::error_code&, const std::error_code&)
+   operator<(const error_code& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/7/system_error:208:3: note:   no known conversion for argument 1 from ‘const iterator {aka const DequeIterator<int>}’ to ‘const std::error_code&’
+/usr/include/c++/7/system_error:282:3: note: candidate: bool std::operator<(const std::error_condition&, const std::error_condition&)
+   operator<(const error_condition& __lhs,
+   ^~~~~~~~
+/usr/include/c++/7/system_error:282:3: note:   no known conversion for argument 1 from ‘const iterator {aka const DequeIterator<int>}’ to ‘const std::error_condition&’
+In file included from /usr/include/c++/7/vector:64:0,
+                 from Deque.h:6,
+                 from Deque_test.cpp:6:
+/usr/include/c++/7/bits/stl_vector.h:1613:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_vector.h:1613:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:105:20: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+                  ~~^~~
+Deque.h:105:39: error: no match for ‘operator-’ (operand types are ‘const iterator {aka const DequeIterator<int>}’ and ‘int’)
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+                                      ~^~
+Deque.h:172:11: note: candidate: DequeIterator<T>::iterator DequeIterator<T>::operator-(int) [with T = int; DequeIterator<T>::iterator = DequeIterator<int>] <near match>
+  iterator operator-(int i);
+           ^~~~~~~~
+Deque.h:172:11: note:   passing ‘const iterator* {aka const DequeIterator<int>*}’ as ‘this’ argument discards qualifiers
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:389:5: note: candidate: template<class _IteratorL, class _IteratorR> decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator-(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:389:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:105:39: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+                                      ~^~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:1191:5: note: candidate: template<class _IteratorL, class _IteratorR> decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     operator-(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1191:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:105:39: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::move_iterator<_IteratorL>’
+     if (i < n && j < n) vecOne.erase(j-1), i); // All in vecOne
+                                      ~^~
+In file included from /usr/include/c++/7/vector:65:0,
+                 from Deque.h:6,
+                 from Deque_test.cpp:6:
+/usr/include/c++/7/bits/stl_bvector.h:208:3: note: candidate: std::ptrdiff_t std::operator-(const std::_Bit_iterator_base&, const std::_Bit_iterator_base&)
+   operator-(const _Bit_iterator_base& __x, const _Bit_iterator_base& __y)
+   ^~~~~~~~
+/usr/include/c++/7/bits/stl_bvector.h:208:3: note:   no known conversion for argument 1 from ‘const iterator {aka const DequeIterator<int>}’ to ‘const std::_Bit_iterator_base&’
+In file included from Deque_test.cpp:6:0:
+Deque.h:106:11: error: no match for ‘operator>’ (operand types are ‘const iterator {aka const DequeIterator<int>}’ and ‘int’)
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+         ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_pair.h:462:5: note: candidate: template<class _T1, class _T2> constexpr bool std::operator>(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator>(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_pair.h:462:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:106:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::pair<_T1, _T2>’
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+         ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:317:5: note: candidate: template<class _Iterator> bool std::operator>(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator>(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:317:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:106:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+         ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:355:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator>(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator>(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:355:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:106:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+         ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:1166:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     operator>(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1166:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:106:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::move_iterator<_IteratorL>’
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+         ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:1172:5: note: candidate: template<class _Iterator> bool std::operator>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     operator>(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1172:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:106:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::move_iterator<_IteratorL>’
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+         ~~^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/basic_string.h:6118:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6118:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:106:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+         ~~^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/basic_string.h:6131:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6131:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:106:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+         ~~^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/basic_string.h:6143:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>(const _CharT* __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6143:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:106:11: note:   mismatched types ‘const _CharT*’ and ‘DequeIterator<int>’
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+         ~~^~~
+In file included from /usr/include/c++/7/vector:64:0,
+                 from Deque.h:6,
+                 from Deque_test.cpp:6:
+/usr/include/c++/7/bits/stl_vector.h:1626:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator>(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator>(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_vector.h:1626:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:106:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+         ~~^~~
+Deque.h:106:20: error: no match for ‘operator>’ (operand types are ‘const iterator {aka const DequeIterator<int>}’ and ‘int’)
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+                  ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_pair.h:462:5: note: candidate: template<class _T1, class _T2> constexpr bool std::operator>(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator>(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_pair.h:462:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:106:20: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::pair<_T1, _T2>’
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+                  ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:317:5: note: candidate: template<class _Iterator> bool std::operator>(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator>(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:317:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:106:20: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+                  ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:355:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator>(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator>(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:355:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:106:20: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+                  ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:1166:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     operator>(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1166:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:106:20: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::move_iterator<_IteratorL>’
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+                  ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:1172:5: note: candidate: template<class _Iterator> bool std::operator>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     operator>(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1172:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:106:20: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::move_iterator<_IteratorL>’
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+                  ~~^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/basic_string.h:6118:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6118:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:106:20: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+                  ~~^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/basic_string.h:6131:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6131:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:106:20: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+                  ~~^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/basic_string.h:6143:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>(const _CharT* __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6143:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:106:20: note:   mismatched types ‘const _CharT*’ and ‘DequeIterator<int>’
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+                  ~~^~~
+In file included from /usr/include/c++/7/vector:64:0,
+                 from Deque.h:6,
+                 from Deque_test.cpp:6:
+/usr/include/c++/7/bits/stl_vector.h:1626:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator>(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator>(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_vector.h:1626:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:106:20: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+                  ~~^~~
+Deque.h:106:25: error: no matching function for call to ‘std::vector<int, std::allocator<int> >::erase(const iterator&, const iterator&)’
+     if (i > n && j > n) vecTwo.erase(i, j);    // All in vecTwo
+                         ^~~~~~
+In file included from /usr/include/c++/7/vector:64:0,
+                 from Deque.h:6,
+                 from Deque_test.cpp:6:
+/usr/include/c++/7/bits/stl_vector.h:1179:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::const_iterator) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int, std::allocator<int> > >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*]
+       erase(const_iterator __position)
+       ^~~~~
+/usr/include/c++/7/bits/stl_vector.h:1179:7: note:   candidate expects 1 argument, 2 provided
+/usr/include/c++/7/bits/stl_vector.h:1206:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::erase(std::vector<_Tp, _Alloc>::const_iterator, std::vector<_Tp, _Alloc>::const_iterator) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int, std::allocator<int> > >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*]
+       erase(const_iterator __first, const_iterator __last)
+       ^~~~~
+/usr/include/c++/7/bits/stl_vector.h:1206:7: note:   no known conversion for argument 1 from ‘const iterator {aka const DequeIterator<int>}’ to ‘std::vector<int, std::allocator<int> >::const_iterator {aka __gnu_cxx::__normal_iterator<const int*, std::vector<int, std::allocator<int> > >}’
+In file included from Deque_test.cpp:6:0:
+Deque.h:108:14: error: no matching function for call to ‘Deque<int>::erase(std::vector<int, std::allocator<int> >::iterator, const iterator&)’
+         erase(vecOne.begin(), i);
+         ~~~~~^~~~~~~~~~~~~~~~~~~
+Deque.h:93:6: note: candidate: void Deque<T>::erase(const iterator&) [with T = int; Deque<T>::iterator = DequeIterator<int>]
+ void Deque<T>::erase(const iterator & i)
+      ^~~~~~~~
+Deque.h:93:6: note:   candidate expects 1 argument, 2 provided
+Deque.h:102:6: note: candidate: void Deque<T>::erase(const iterator&, const iterator&) [with T = int; Deque<T>::iterator = DequeIterator<int>]
+ void Deque<T>::erase(const iterator & i, const iterator & j)
+      ^~~~~~~~
+Deque.h:102:6: note:   no known conversion for argument 1 from ‘std::vector<int, std::allocator<int> >::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >}’ to ‘const iterator& {aka const DequeIterator<int>&}’
+Deque.h:109:14: error: no matching function for call to ‘Deque<int>::erase(std::vector<int, std::allocator<int> >::iterator, const iterator&)’
+         erase(vecTwo.begin(), j);
+         ~~~~~^~~~~~~~~~~~~~~~~~~
+Deque.h:93:6: note: candidate: void Deque<T>::erase(const iterator&) [with T = int; Deque<T>::iterator = DequeIterator<int>]
+ void Deque<T>::erase(const iterator & i)
+      ^~~~~~~~
+Deque.h:93:6: note:   candidate expects 1 argument, 2 provided
+Deque.h:102:6: note: candidate: void Deque<T>::erase(const iterator&, const iterator&) [with T = int; Deque<T>::iterator = DequeIterator<int>]
+ void Deque<T>::erase(const iterator & i, const iterator & j)
+      ^~~~~~~~
+Deque.h:102:6: note:   no known conversion for argument 1 from ‘std::vector<int, std::allocator<int> >::iterator {aka __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >}’ to ‘const iterator& {aka const DequeIterator<int>&}’
+Deque.h: In instantiation of ‘void Deque<T>::insert(const iterator&, const T&) [with T = int; Deque<T>::iterator = DequeIterator<int>]’:
+Deque_test.cpp:61:23:   required from here
+Deque.h:117:11: error: no match for ‘operator<’ (operand types are ‘const iterator {aka const DequeIterator<int>}’ and ‘int’)
+     if (i < n) vecOne.insert(i, v);
+         ~~^~~
+Deque.h:168:7: note: candidate: bool DequeIterator<T>::operator<(const iterator&) [with T = int; DequeIterator<T>::iterator = DequeIterator<int>]
+  bool operator<(const iterator & r);
+       ^~~~~~~~
+Deque.h:168:7: note:   no known conversion for argument 1 from ‘int’ to ‘const iterator& {aka const DequeIterator<int>&}’
+In file included from /usr/include/c++/7/bits/stl_algobase.h:64:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_pair.h:449:5: note: candidate: template<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_pair.h:449:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:117:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::pair<_T1, _T2>’
+     if (i < n) vecOne.insert(i, v);
+         ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:305:5: note: candidate: template<class _Iterator> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:305:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:117:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+     if (i < n) vecOne.insert(i, v);
+         ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:343:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:343:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:117:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+     if (i < n) vecOne.insert(i, v);
+         ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:1142:5: note: candidate: template<class _IteratorL, class _IteratorR> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     operator<(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1142:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:117:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::move_iterator<_IteratorL>’
+     if (i < n) vecOne.insert(i, v);
+         ~~^~~
+In file included from /usr/include/c++/7/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/7/bits/char_traits.h:39,
+                 from /usr/include/c++/7/ios:40,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/stl_iterator.h:1148:5: note: candidate: template<class _Iterator> bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     operator<(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_iterator.h:1148:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:117:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::move_iterator<_IteratorL>’
+     if (i < n) vecOne.insert(i, v);
+         ~~^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/basic_string.h:6080:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6080:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:117:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+     if (i < n) vecOne.insert(i, v);
+         ~~^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/basic_string.h:6093:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6093:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:117:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+     if (i < n) vecOne.insert(i, v);
+         ~~^~~
+In file included from /usr/include/c++/7/string:52:0,
+                 from /usr/include/c++/7/bits/locale_classes.h:40,
+                 from /usr/include/c++/7/bits/ios_base.h:41,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/bits/basic_string.h:6105:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^~~~~~~~
+/usr/include/c++/7/bits/basic_string.h:6105:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:117:11: note:   mismatched types ‘const _CharT*’ and ‘DequeIterator<int>’
+     if (i < n) vecOne.insert(i, v);
+         ~~^~~
+In file included from /usr/include/c++/7/bits/ios_base.h:46:0,
+                 from /usr/include/c++/7/ios:42,
+                 from /usr/include/c++/7/ostream:38,
+                 from /usr/include/c++/7/iostream:39,
+                 from Deque_test.cpp:3:
+/usr/include/c++/7/system_error:208:3: note: candidate: bool std::operator<(const std::error_code&, const std::error_code&)
+   operator<(const error_code& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+/usr/include/c++/7/system_error:208:3: note:   no known conversion for argument 1 from ‘const iterator {aka const DequeIterator<int>}’ to ‘const std::error_code&’
+/usr/include/c++/7/system_error:282:3: note: candidate: bool std::operator<(const std::error_condition&, const std::error_condition&)
+   operator<(const error_condition& __lhs,
+   ^~~~~~~~
+/usr/include/c++/7/system_error:282:3: note:   no known conversion for argument 1 from ‘const iterator {aka const DequeIterator<int>}’ to ‘const std::error_condition&’
+In file included from /usr/include/c++/7/vector:64:0,
+                 from Deque.h:6,
+                 from Deque_test.cpp:6:
+/usr/include/c++/7/bits/stl_vector.h:1613:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^~~~~~~~
+/usr/include/c++/7/bits/stl_vector.h:1613:5: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:117:11: note:   ‘const iterator {aka const DequeIterator<int>}’ is not derived from ‘const std::vector<_Tp, _Alloc>’
+     if (i < n) vecOne.insert(i, v);
+         ~~^~~
+Deque.h:117:16: error: no matching function for call to ‘std::vector<int, std::allocator<int> >::insert(const iterator&, const int&)’
+     if (i < n) vecOne.insert(i, v);
+                ^~~~~~
+In file included from /usr/include/c++/7/vector:69:0,
+                 from Deque.h:6,
+                 from Deque_test.cpp:6:
+/usr/include/c++/7/bits/vector.tcc:114:5: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, const value_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int, std::allocator<int> > >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*; std::vector<_Tp, _Alloc>::value_type = int]
+     vector<_Tp, _Alloc>::
+     ^~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/vector.tcc:114:5: note:   no known conversion for argument 1 from ‘const iterator {aka const DequeIterator<int>}’ to ‘std::vector<int, std::allocator<int> >::const_iterator {aka __gnu_cxx::__normal_iterator<const int*, std::vector<int, std::allocator<int> > >}’
+In file included from /usr/include/c++/7/vector:64:0,
+                 from Deque.h:6,
+                 from Deque_test.cpp:6:
+/usr/include/c++/7/bits/stl_vector.h:1042:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int, std::allocator<int> > >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*; std::vector<_Tp, _Alloc>::value_type = int]
+       insert(const_iterator __position, value_type&& __x)
+       ^~~~~~
+/usr/include/c++/7/bits/stl_vector.h:1042:7: note:   no known conversion for argument 1 from ‘const iterator {aka const DequeIterator<int>}’ to ‘std::vector<int, std::allocator<int> >::const_iterator {aka __gnu_cxx::__normal_iterator<const int*, std::vector<int, std::allocator<int> > >}’
+/usr/include/c++/7/bits/stl_vector.h:1059:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, std::initializer_list<_Tp>) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int, std::allocator<int> > >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*]
+       insert(const_iterator __position, initializer_list<value_type> __l)
+       ^~~~~~
+/usr/include/c++/7/bits/stl_vector.h:1059:7: note:   no known conversion for argument 1 from ‘const iterator {aka const DequeIterator<int>}’ to ‘std::vector<int, std::allocator<int> >::const_iterator {aka __gnu_cxx::__normal_iterator<const int*, std::vector<int, std::allocator<int> > >}’
+/usr/include/c++/7/bits/stl_vector.h:1084:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, std::vector<_Tp, _Alloc>::size_type, const value_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int, std::allocator<int> > >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::value_type = int]
+       insert(const_iterator __position, size_type __n, const value_type& __x)
+       ^~~~~~
+/usr/include/c++/7/bits/stl_vector.h:1084:7: note:   candidate expects 3 arguments, 2 provided
+/usr/include/c++/7/bits/stl_vector.h:1128:2: note: candidate: template<class _InputIterator, class> std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, _InputIterator, _InputIterator) [with _InputIterator = _InputIterator; <template-parameter-2-2> = <template-parameter-1-2>; _Tp = int; _Alloc = std::allocator<int>]
+  insert(const_iterator __position, _InputIterator __first,
+  ^~~~~~
+/usr/include/c++/7/bits/stl_vector.h:1128:2: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:117:16: note:   candidate expects 3 arguments, 2 provided
+     if (i < n) vecOne.insert(i, v);
+                ^~~~~~
+Deque.h:118:10: error: no matching function for call to ‘std::vector<int, std::allocator<int> >::insert(const iterator&, const int&)’
+     else vecTwo.insert(i, v);
+          ^~~~~~
+In file included from /usr/include/c++/7/vector:69:0,
+                 from Deque.h:6,
+                 from Deque_test.cpp:6:
+/usr/include/c++/7/bits/vector.tcc:114:5: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, const value_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int, std::allocator<int> > >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*; std::vector<_Tp, _Alloc>::value_type = int]
+     vector<_Tp, _Alloc>::
+     ^~~~~~~~~~~~~~~~~~~
+/usr/include/c++/7/bits/vector.tcc:114:5: note:   no known conversion for argument 1 from ‘const iterator {aka const DequeIterator<int>}’ to ‘std::vector<int, std::allocator<int> >::const_iterator {aka __gnu_cxx::__normal_iterator<const int*, std::vector<int, std::allocator<int> > >}’
+In file included from /usr/include/c++/7/vector:64:0,
+                 from Deque.h:6,
+                 from Deque_test.cpp:6:
+/usr/include/c++/7/bits/stl_vector.h:1042:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int, std::allocator<int> > >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*; std::vector<_Tp, _Alloc>::value_type = int]
+       insert(const_iterator __position, value_type&& __x)
+       ^~~~~~
+/usr/include/c++/7/bits/stl_vector.h:1042:7: note:   no known conversion for argument 1 from ‘const iterator {aka const DequeIterator<int>}’ to ‘std::vector<int, std::allocator<int> >::const_iterator {aka __gnu_cxx::__normal_iterator<const int*, std::vector<int, std::allocator<int> > >}’
+/usr/include/c++/7/bits/stl_vector.h:1059:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, std::initializer_list<_Tp>) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int, std::allocator<int> > >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*]
+       insert(const_iterator __position, initializer_list<value_type> __l)
+       ^~~~~~
+/usr/include/c++/7/bits/stl_vector.h:1059:7: note:   no known conversion for argument 1 from ‘const iterator {aka const DequeIterator<int>}’ to ‘std::vector<int, std::allocator<int> >::const_iterator {aka __gnu_cxx::__normal_iterator<const int*, std::vector<int, std::allocator<int> > >}’
+/usr/include/c++/7/bits/stl_vector.h:1084:7: note: candidate: std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, std::vector<_Tp, _Alloc>::size_type, const value_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::iterator = __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >; typename std::_Vector_base<_Tp, _Alloc>::pointer = int*; std::vector<_Tp, _Alloc>::const_iterator = __gnu_cxx::__normal_iterator<const int*, std::vector<int, std::allocator<int> > >; typename __gnu_cxx::__alloc_traits<typename std::_Vector_base<_Tp, _Alloc>::_Tp_alloc_type>::const_pointer = const int*; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::value_type = int]
+       insert(const_iterator __position, size_type __n, const value_type& __x)
+       ^~~~~~
+/usr/include/c++/7/bits/stl_vector.h:1084:7: note:   candidate expects 3 arguments, 2 provided
+/usr/include/c++/7/bits/stl_vector.h:1128:2: note: candidate: template<class _InputIterator, class> std::vector<_Tp, _Alloc>::iterator std::vector<_Tp, _Alloc>::insert(std::vector<_Tp, _Alloc>::const_iterator, _InputIterator, _InputIterator) [with _InputIterator = _InputIterator; <template-parameter-2-2> = <template-parameter-1-2>; _Tp = int; _Alloc = std::allocator<int>]
+  insert(const_iterator __position, _InputIterator __first,
+  ^~~~~~
+/usr/include/c++/7/bits/stl_vector.h:1128:2: note:   template argument deduction/substitution failed:
+In file included from Deque_test.cpp:6:0:
+Deque.h:118:10: note:   candidate expects 3 arguments, 2 provided
+     else vecTwo.insert(i, v);
+          ^~~~~~
+]0;005977045@jb358-0:~/cse330/lab7[005977045@jb358-0 lab7]$ exit
+exit
+
+Script done on 2017-11-13 11:49:36-0800
