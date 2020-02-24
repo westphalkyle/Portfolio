@@ -1,0 +1,10 @@
+/**************************************************
+* Name: Kyle Westphal, Heidy Ramirez
+* Class: CSE 460
+* Project: Operating System, Phase 1
+* Date: 1/28/19
+* Description: This project is a virtual machine that has 25 opcodes that 
+*                executes the 3 files named test, add5 , fact. The assembler 
+*                translates to object file then the virtual machine executes 
+*                the code. 
+**************************************************
