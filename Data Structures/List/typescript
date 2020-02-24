@@ -1,0 +1,134 @@
+Script started on 2017-12-04 10:46:19-0800
+]0;005977045@jb358-0:~/cse330/lab5[005977045@jb358-0 lab5]$ g++ List.h
+[01m[KList.h:[m[K In member function ‘[01m[Kvoid List<T>::push_front(const T&)[m[K’:
+[01m[KList.h:98:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ was not declared in this scope
+         [01;31m[Kcout[m[K << "Error";
+         [01;31m[K^~~~[m[K
+[01m[KList.h:[m[K In member function ‘[01m[Kvoid List<T>::push_back(const T&)[m[K’:
+[01m[KList.h:120:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ was not declared in this scope
+         [01;31m[Kcout[m[K << "Error";
+         [01;31m[K^~~~[m[K
+[01m[KList.h:[m[K In member function ‘[01m[KList<T> List<T>::operator=(const List<T>&)[m[K’:
+[01m[KList.h:217:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ was not declared in this scope
+     [01;31m[Kcout[m[K << "Inside assignment op" << endl;
+     [01;31m[K^~~~[m[K
+[01m[KList.h:217:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kendl[m[K’ was not declared in this scope
+     cout << "Inside assignment op" << [01;31m[Kendl[m[K;
+                                       [01;31m[K^~~~[m[K
+[01m[KList.h:217:39:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kend[m[K’
+     cout << "Inside assignment op" << [01;36m[Kendl[m[K;
+                                       [01;36m[K^~~~[m[K
+                                       [32m[Kend[m[K
+[01m[KList.h:[m[K At global scope:
+[01m[KList.h:350:21:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K<[m[K’ token
+ T & reverse_iterator[01;31m[K<[m[KT>::operator*()
+                     [01;31m[K^[m[K
+[01m[KList.h:356:10:[m[K [01;31m[Kerror: [m[Kexpected nested-name-specifier before ‘[01m[Kreverse_iterator[m[K’
+ typename [01;31m[Kreverse_iterator[m[K<T>::iterator reverse_iterator<T>::operator=(const iterator &rhs)
+          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[KList.h:356:26:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K<[m[K’ token
+ typename reverse_iterator[01;31m[K<[m[KT>::iterator reverse_iterator<T>::operator=(const iterator &rhs)
+                          [01;31m[K^[m[K
+[01m[KList.h:363:22:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K<[m[K’ token
+ bool reverse_iterator[01;31m[K<[m[KT>::operator==(const iterator &rhs) const
+                      [01;31m[K^[m[K
+[01m[KList.h:371:1:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[Kreverse_iterator[m[K’ is ambiguous
+ [01;31m[Kreverse_iterator[m[K<T> & reverse_iterator<T>::operator++() // pre-increment
+ [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[KList.h:320:7:[m[K [01;36m[Knote: [m[Kcandidates are: template<class T> class reverse_iterator
+ class [01;36m[Kreverse_iterator[m[K
+       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/7/algorithm:61[m[K,
+                 from [01m[KList.h:6[m[K:
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:101:11:[m[K [01;36m[Knote: [m[K                template<class _Iterator> class std::reverse_iterator
+     class [01;36m[Kreverse_iterator[m[K
+           [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[KList.h:378:1:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[Kreverse_iterator[m[K’ is ambiguous
+ [01;31m[Kreverse_iterator[m[K<T> reverse_iterator<T>::operator++(int) // post-increment
+ [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[KList.h:320:7:[m[K [01;36m[Knote: [m[Kcandidates are: template<class T> class reverse_iterator
+ class [01;36m[Kreverse_iterator[m[K
+       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/7/algorithm:61[m[K,
+                 from [01m[KList.h:6[m[K:
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:101:11:[m[K [01;36m[Knote: [m[K                template<class _Iterator> class std::reverse_iterator
+     class [01;36m[Kreverse_iterator[m[K
+           [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[KList.h:386:1:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[Kreverse_iterator[m[K’ is ambiguous
+ [01;31m[Kreverse_iterator[m[K<T>& reverse_iterator<T>::operator--() // pre-decrement
+ [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[KList.h:320:7:[m[K [01;36m[Knote: [m[Kcandidates are: template<class T> class reverse_iterator
+ class [01;36m[Kreverse_iterator[m[K
+       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/7/algorithm:61[m[K,
+                 from [01m[KList.h:6[m[K:
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:101:11:[m[K [01;36m[Knote: [m[K                template<class _Iterator> class std::reverse_iterator
+     class [01;36m[Kreverse_iterator[m[K
+           [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[KList.h:393:10:[m[K [01;31m[Kerror: [m[Kexpected nested-name-specifier before ‘[01m[Kreverse_iterator[m[K’
+ typename [01;31m[Kreverse_iterator[m[K<T>::iterator reverse_iterator<T>::operator--(int) // post-decrement
+          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[KList.h:393:26:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K<[m[K’ token
+ typename reverse_iterator[01;31m[K<[m[KT>::iterator reverse_iterator<T>::operator--(int) // post-decrement
+                          [01;31m[K^[m[K
+[01m[KList.h:401:1:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[Kreverse_iterator[m[K’ is ambiguous
+ [01;31m[Kreverse_iterator[m[K<T>::iterator reverse_iterator<T>::operator[](unsigned int index)
+ [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[KList.h:320:7:[m[K [01;36m[Knote: [m[Kcandidates are: template<class T> class reverse_iterator
+ class [01;36m[Kreverse_iterator[m[K
+       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/7/algorithm:61[m[K,
+                 from [01m[KList.h:6[m[K:
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:101:11:[m[K [01;36m[Knote: [m[K                template<class _Iterator> class std::reverse_iterator
+     class [01;36m[Kreverse_iterator[m[K
+           [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[KList.h:411:1:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[Kreverse_iterator[m[K’ is ambiguous
+ [01;31m[Kreverse_iterator[m[K<T>::iterator reverse_iterator<T>::rbegin();
+ [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[KList.h:320:7:[m[K [01;36m[Knote: [m[Kcandidates are: template<class T> class reverse_iterator
+ class [01;36m[Kreverse_iterator[m[K
+       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/7/algorithm:61[m[K,
+                 from [01m[KList.h:6[m[K:
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:101:11:[m[K [01;36m[Knote: [m[K                template<class _Iterator> class std::reverse_iterator
+     class [01;36m[Kreverse_iterator[m[K
+           [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[KList.h:412:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K{[m[K’ token
+ [01;31m[K{[m[K
+ [01;31m[K^[m[K
+[01m[KList.h:417:1:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[Kreverse_iterator[m[K’ is ambiguous
+ [01;31m[Kreverse_iterator[m[K<T>::iterator reverse_iterator<T>::rend()
+ [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[KList.h:320:7:[m[K [01;36m[Knote: [m[Kcandidates are: template<class T> class reverse_iterator
+ class [01;36m[Kreverse_iterator[m[K
+       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/7/algorithm:61[m[K,
+                 from [01m[KList.h:6[m[K:
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:101:11:[m[K [01;36m[Knote: [m[K                template<class _Iterator> class std::reverse_iterator
+     class [01;36m[Kreverse_iterator[m[K
+           [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[KList.h:423:1:[m[K [01;31m[Kerror: [m[Kreference to ‘[01m[Kreverse_iterator[m[K’ is ambiguous
+ [01;31m[Kreverse_iterator[m[K<T>::iterator reverse_iterator<T>::reverse();
+ [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[KList.h:320:7:[m[K [01;36m[Knote: [m[Kcandidates are: template<class T> class reverse_iterator
+ class [01;36m[Kreverse_iterator[m[K
+       [01;36m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/7/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/7/algorithm:61[m[K,
+                 from [01m[KList.h:6[m[K:
+[01m[K/usr/include/c++/7/bits/stl_iterator.h:101:11:[m[K [01;36m[Knote: [m[K                template<class _Iterator> class std::reverse_iterator
+     class [01;36m[Kreverse_iterator[m[K
+           [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[KList.h:424:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K{[m[K’ token
+ [01;31m[K{[m[K
+ [01;31m[K^[m[K
+]0;005977045@jb358-0:~/cse330/lab5[005977045@jb358-0 lab5]$ exit
+exit
+
+Script done on 2017-12-04 10:46:30-0800
