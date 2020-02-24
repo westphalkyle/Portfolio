@@ -1,0 +1,67 @@
+Script started on 2017-11-20 10:52:48-0800
+]0;005977045@jb358-0:~/cse330/lab8[005977045@jb358-0 lab8]$ g++ Set_test.cpp
+In file included from [01m[KSet_test.cpp:6:0[m[K:
+[01m[KSet.h:119:36:[m[K [01;31m[Kerror: [m[Kprototype for ‘[01m[Ktypename Set_iterator<T>::iterator Set<T>::insert(const T&)[m[K’ does not match any in class ‘[01m[KSet<T>[m[K’
+ typename Set_iterator<T>::iterator [01;31m[KSet<T>[m[K::insert(const T & x)
+                                    [01;31m[K^~~~~~[m[K
+[01m[KSet.h:85:11:[m[K [01;31m[Kerror: [m[Kcandidate is: Set<T>::iterator Set<T>::insert(const T&)
+  iterator [01;31m[Kinsert[m[K(const T & x); // return an iterator to x if it already exists, otherwise insert and return an iterator to x
+           [01;31m[K^~~~~~[m[K
+[01m[KSet.h:[m[K In member function ‘[01m[Kunsigned int Set<T>::count(const T&) const[m[K’:
+[01m[KSet.h:196:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kvalue[m[K’ was not declared in this scope
+     if (x == [01;31m[Kvalue[m[K) return 1;
+              [01;31m[K^~~~~[m[K
+[01m[KSet.h:196:14:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kvalloc[m[K’
+     if (x == [01;36m[Kvalue[m[K) return 1;
+              [01;36m[K^~~~~[m[K
+              [32m[Kvalloc[m[K
+[01m[KSet.h:197:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kvalue[m[K’ was not declared in this scope
+     if (x < [01;31m[Kvalue[m[K) {
+             [01;31m[K^~~~~[m[K
+[01m[KSet.h:197:13:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kvalloc[m[K’
+     if (x < [01;36m[Kvalue[m[K) {
+             [01;36m[K^~~~~[m[K
+             [32m[Kvalloc[m[K
+[01m[KSet.h:[m[K At global scope:
+[01m[KSet.h:208:36:[m[K [01;31m[Kerror: [m[Kprototype for ‘[01m[Ktypename Set_iterator<T>::iterator Set<T>::find(const T&) const[m[K’ does not match any in class ‘[01m[KSet<T>[m[K’
+ typename Set_iterator<T>::iterator [01;31m[KSet<T>[m[K::find(const T & x) const
+                                    [01;31m[K^~~~~~[m[K
+[01m[KSet.h:89:11:[m[K [01;31m[Kerror: [m[Kcandidate is: Set<T>::iterator Set<T>::find(const T&) const
+  iterator [01;31m[Kfind[m[K(const T & x) const;
+           [01;31m[K^~~~[m[K
+[01m[KSet.h:215:36:[m[K [01;31m[Kerror: [m[Kprototype for ‘[01m[Ktypename Set_iterator<T>::iterator Set<T>::begin() const[m[K’ does not match any in class ‘[01m[KSet<T>[m[K’
+ typename Set_iterator<T>::iterator [01;31m[KSet<T>[m[K::begin() const
+                                    [01;31m[K^~~~~~[m[K
+[01m[KSet.h:90:11:[m[K [01;31m[Kerror: [m[Kcandidate is: Set<T>::iterator Set<T>::begin() const
+  iterator [01;31m[Kbegin[m[K() const; // for in-order traversal
+           [01;31m[K^~~~~[m[K
+[01m[KSet.h:244:19:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemplate<class T> class Set_iterator[m[K’ used without template parameters
+ Set_iterator<T> & [01;31m[KSet_iterator[m[K::operator++()
+                   [01;31m[K^~~~~~~~~~~~[m[K
+[01m[KSet.h:244:44:[m[K [01;31m[Kerror: [m[K‘[01m[KSet_iterator<T>& operator++()[m[K’ must have an argument of class or enumerated type
+ Set_iterator<T> & Set_iterator::operator++([01;31m[K)[m[K
+                                            [01;31m[K^[m[K
+[01m[KSet.h:253:17:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemplate<class T> class Set_iterator[m[K’ used without template parameters
+ Set_iterator<T> [01;31m[KSet_iterator[m[K::operator++(int)
+                 [01;31m[K^~~~~~~~~~~~[m[K
+[01m[KSet.h:253:45:[m[K [01;31m[Kerror: [m[K‘[01m[KSet_iterator<T> operator++(int)[m[K’ must have an argument of class or enumerated type
+ Set_iterator<T> Set_iterator::operator++(int[01;31m[K)[m[K
+                                             [01;31m[K^[m[K
+Set.h: In instantiation of ‘[01m[Kunsigned int Set<T>::count(const T&) const [with T = int][m[K’:
+[01m[KSet_test.cpp:25:4:[m[K   required from here
+[01m[KSet.h:198:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class Set<int>[m[K’ has no member named ‘[01m[KleftChild[m[K’
+         if ([01;31m[Kthis ->leftChild[m[K == NULL) return 0;
+             [01;31m[K~~~~~~~^~~~~~~~~[m[K
+[01m[KSet.h:199:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class Set<int>[m[K’ has no member named ‘[01m[KleftChild[m[K’
+         else return [01;31m[Kthis -> leftChild[m[K.count(x);
+                     [01;31m[K~~~~~~~~^~~~~~~~~[m[K
+[01m[KSet.h:202:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class Set<int>[m[K’ has no member named ‘[01m[KrightChild[m[K’
+         if ([01;31m[Kthis ->rightChild[m[K = NULL) return 0;
+             [01;31m[K~~~~~~~^~~~~~~~~~[m[K
+[01m[KSet.h:203:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class Set<int>[m[K’ has no member named ‘[01m[KrightChild[m[K’
+         else return [01;31m[Kthis -> rightChild[m[K.count(x);
+                     [01;31m[K~~~~~~~~^~~~~~~~~~[m[K
+]0;005977045@jb358-0:~/cse330/lab8[005977045@jb358-0 lab8]$ exit
+exit
+
+Script done on 2017-11-20 10:53:04-0800
